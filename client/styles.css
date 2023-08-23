@@ -1,0 +1,11 @@
+/* This resets the CSS on the website by default */
+/* NOTE: I haven't really tested this yet, so it may not work as intended */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+/* Write your CSS below */
