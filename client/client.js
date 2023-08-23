@@ -1,7 +1,13 @@
+// Write your code here:
+window.addEventListener("DOMContentLoaded", exampleGETRequest);
+
 async function exampleGETRequest (e) {
     try {
-        const teamColour = await fetch('http://127.0.0.1:8090/team/current/colour');
-        const teamColourText = await teamColour.text();
+        const test = await fetch('http://localhost:8090/test/get');
+        const testText = await test.text();
+        console.log(testText);
+        // Change the h1 element text to testText:
+
     } catch (e) {
         console.log(e);
     }
@@ -9,19 +15,15 @@ async function exampleGETRequest (e) {
 
 async function examplePOSTRequest (e) {
     try {
-        const currentTeam = await fetch('http://127.0.0.1:8090/team/current');
-        const currentTeamText = await currentTeam.text();
-        await fetch('http://127.0.0.1:8090/team/newEvent', {
+        await fetch('http://localhost:8090/test/new', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 Accept: 'application/json'
             },
-            body: JSON.stringify({ day: `${date}`, time: `${timeInfo}`, teamID: currentTeamText })
+            body: JSON.stringify({ message: 'Hello World 2!' })
         });
     } catch (e) {
         console.log(e);
     }
 }
-
-// Write your code here:

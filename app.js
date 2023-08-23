@@ -2,14 +2,14 @@
 const express = require('express');
 const fs = require('fs');
 const bodyParser = require('body-parser');
-const app = express();
-
-app.use(express.static('client'));
-app.use(bodyParser.json());
 
 // These import the JSON files I am using to store data
 // Using JSON files: https://www.geeksforgeeks.org/explain-about-read-and-write-of-a-file-using-javascript/
 const test = require('./test.json');
+
+const app = express();
+app.use(express.static('client'));
+app.use(bodyParser.json());
 
 app.get('/test/get', (req, res) => {
     res.send(test[0]);
