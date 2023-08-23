@@ -31,5 +31,7 @@ Well done! POST and GET requests are the two main types that you will use. The n
 9. Now that you have the GET and POST requests working, change url in the GET request to the other GET request in app.js (the back-end). Get the last element of the array in test.json using this API endpoint.
 10. When the form submits, make it so that the POST request is called, then the GET request so that the h1 automatically updates to the submitted value. You may want to research anonymous or arrow functions to use as the callback to make your code a bit tidier.
 
+Your code is saved on your local device, but to publish the changes, use the Source Control tab on the left in VSCode to submit your changes to your repo on GitHub!
+
 ### Part 2
 This will a lot more loose and feel free to mess around! Make sure to read app.js, it's okay to not understand what every line does, but the necessary endpoints will be in there.
