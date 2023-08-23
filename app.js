@@ -1,4 +1,4 @@
-// This sets up the back-end (I are using NodeJS and ExpressJS)
+// This sets up the back-end (I am using NodeJS and ExpressJS)
 const express = require('express');
 const fs = require('fs');
 const bodyParser = require('body-parser');
@@ -11,6 +11,7 @@ const app = express();
 app.use(express.static('client'));
 app.use(bodyParser.json());
 
+// Part 1 endpoints
 app.get('/test/get', (req, res) => {
     res.send(test[0]);
 });
@@ -43,5 +44,7 @@ app.post('/test/remove', (req, res) => {
     res.status(200);
     res.end();
 });
+
+// Part 2 endpoints
 
 module.exports = app;
