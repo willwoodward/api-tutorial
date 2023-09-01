@@ -3,7 +3,8 @@
 - If you haven't alread, install NodeJS and NPM using [this guide](https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac)
 - Fork this repository using [this guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 - Install dependencies by typing 'npm install' in the command line while in the project
-- Start the server with 'npm start' and open http://127.0.0.1:8090 in your browser
+- Start the server with 'npm start' and open http://localhost:8090 in your browser
+(NOTE: if this does not work, try using 127.0.0.1 instead of localhost, you'll have to change the endpoint URI's in the client.js too)
 
 When updating front-end code, refresh the page to see changes. I have not set up hot reloading.
 
